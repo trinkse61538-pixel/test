@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Lê Thị Thảo Nguyên - Business Development & B2B Sales Specialist</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #f3f4f9;
+            --bg-card: #ffffff;
+            --primary: #1e3a8a; /* Deep Navy Royal Blue */
+            --secondary: #0d9488; /* Elegant Teal Accent */
+            --dark: #0f172a; /* Slate 900 */
+            --gray-text: #475569; /* Slate 600 */
+            --light-gray: #f8fafc; /* Slate 50 */
+            --border-color: #e2e8f0;
+            --gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            --gradient-accent: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+            --shadow-sm: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+            --shadow-md: 0 10px 25px -5px rgba(30,58,138,0.08), 0 8px 16px -6px rgba(30,58,138,0.05);
+            --radius-lg: 24px;
+            --radius-md: 16px;
+            --radius-sm: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--dark);
+            line-height: 1.65;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cv-wrapper {
+            width: 100%;
+            max-width: 1100px;
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            position: relative;
+        }
+
+        /* Decorative background shapes for creative flare */
+        .cv-wrapper::before {
+            content: "";
+            position: absolute;
+            top: -150px;
+            right: -150px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(13, 148, 136, 0.05);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* LEFT SIDEBAR (Dark Premium Theme) */
+        .sidebar {
+            background: var(--gradient-primary);
+            color: #ffffff;
+            padding: 50px 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .profile-container {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .profile-frame {
+            position: relative;
+            width: 170px;
+            height: 170px;
+            margin: 0 auto 25px auto;
+        }
+
+        .profile-frame::before {
+            content: "";
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0d9488, #38bdf8);
+            padding: 4px;
+            z-index: 1;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #0f172a;
+            position: relative;
+            z-index: 2;
+            background: #ffffff;
+        }
+
+        .sidebar h1 {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #ffffff 60%, #99f6e4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sidebar .tagline {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #2dd4bf;
+            display: inline-block;
+            background: rgba(13, 148, 136, 0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-section-title {
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-section-title::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: rgba(148, 163, 184, 0.2);
+        }
+
+        /* Contact Details */
+        .contact-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .contact-link-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link-item:hover {
+            color: #ffffff;
+            transform: translateX(3px);
+        }
+
+        .contact-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--radius-sm);
+            background: rgba(255, 255, 255, 0.06);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: #2dd4bf;
+            flex-shrink: 0;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Core Strengths & Skills Grid */
+        .strength-item {
+            background: rgba(255, 255, 255, 0.04);
+            border-left: 3px solid #0d9488;
+            padding: 12px 16px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin-bottom: 12px;
+        }
+
+        .strength-item strong {
+            display: block;
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .strength-item p {
+            font-size: 12.5px;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+
+        /* RIGHT MAIN CONTENT (Elegant & Crisp) */
+        .main-content {
+            padding: 50px 45px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            z-index: 2;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary);
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .objective-card {
+            background: linear-gradient(to right, var(--light-gray), #ffffff);
+            padding: 24px;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--secondary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .objective-text {
+            font-size: 14.5px;
+            color: var(--gray-text);
+            text-align: justify;
+            margin-bottom: 12px;
+        }
+
+        .objective-text:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Modernized Timeline */
+        .timeline-container {
+            position: relative;
+            padding-left: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .timeline-container::before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background: #e2e8f0;
+        }
+
+        .timeline-node {
+            position: relative;
+        }
+
+        .timeline-node::before {
+            content: "";
+            position: absolute;
+            left: -24px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 3px solid var(--secondary);
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-node:hover::before {
+            background: var(--secondary);
+            transform: scale(1.2);
+        }
+
+        .job-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .job-role {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .company-badge-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 2px;
+        }
+
+        .company-name {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .date-badge {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--primary);
+            background: #eff6ff;
+            padding: 4px 14px;
+            border-radius: 20px;
+            border: 1px solid #dbeafe;
+            white-space: nowrap;
+        }
+
+        .task-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .task-list li {
+            font-size: 14px;
+            color: var(--gray-text);
+            position: relative;
+            padding-left: 18px;
+            text-align: justify;
+        }
+
+        .task-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        /* Education Layout Changes */
+        .edu-card {
+            background: var(--light-gray);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .edu-info h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .edu-info p {
+            font-size: 14px;
+            color: var(--gray-text);
+        }
+
+        .edu-grade {
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .grade-pill {
+            background: #f0fdf4;
+            color: #16a34a;
+            border: 1px solid #bbf7d0;
+            padding: 6px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* Skills Tag Pill Blocks */
+        .skill-box-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .skill-subgroup-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #ffffff;
+            color: var(--dark);
+            border: 1px solid #cbd5e1;
+            padding: 8px 16px;
+            font-size: 13.5px;
+            font-weight: 500;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .skill-tag:hover {
+            background: var(--gradient-accent);
+            color: #ffffff;
+            border-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(13, 148, 136, 0.2);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .cv-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                padding: 40px;
+                text-align: center;
+            }
+            .sidebar-section-title::after {
+                display: none;
+            }
+            .contact-list {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .strength-item {
+                border-left: none;
+                border-top: 3px solid #0d9488;
+                border-radius: var(--radius-sm);
+                text-align: left;
+            }
+            .main-content {
+                padding: 40px 30px;
+            }
+            .job-card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .date-badge {
+                align-self: flex-start;
+            }
+            .edu-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .edu-grade {
+                text-align: left;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-wrapper">
+        <!-- LEFT SIDEBAR: Personal Branding & Core Details -->
+        <aside class="sidebar">
+            <div class="profile-container">
+                <div class="profile-frame">
+                    <img class="profile-img" src="https://raw.githubusercontent.com/trinkse61538-pixel/test/bd2b776b7b2516549ef53be61a0de4a231bb4a4c/Screenshot%202026-06-05%20at%2009.54.20.png" alt="Lê Thị Thảo Nguyên">
+                </div>
+                <h1>Lê Thị Thảo Nguyên</h1>
+                <span class="tagline">Business Development</span>
+            </div>
+
+            <!-- Contact Section -->
+            <div>
+                <div class="sidebar-section-title">Thông tin liên hệ</div>
+                <ul class="contact-list">
+                    <li>
+                        <a href="#" class="contact-link-item">
+                            <div class="contact-icon">📅</div>
+                            <span>14/12/1994</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:0764004909" class="contact-link-item">
+                            <div class="contact-icon">📞</div>
+                            <span>0764 004 909</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:nguyen.ltt1412@gmail.com" class="contact-link-item">
+                            <div class="contact-icon">✉️</div>
+                            <span>nguyen.ltt1412@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="contact-link-item">
+                            <div class="contact-icon">📍</div>
+                            <span>Quận 6, TP. Hồ Chí Minh</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Core Strengths Section -->
+            <div>
+                <div class="sidebar-section-title">Điểm mạnh cốt lõi</div>
+                <div class="strength-item">
+                    <strong>Tốc độ & Thích nghi</strong>
+                    <p>Học hỏi nhanh, nhạy bén nắm bắt quy trình vận hành và thích nghi tốt trong môi trường áp lực cao.</p>
+                </div>
+                <div class="strength-item">
+                    <strong>Tư duy cầu tiến</strong>
+                    <p>Tinh thần chủ động, không ngại thay đổi để tối ưu hóa hiệu suất công việc.</p>
+                </div>
+                <div class="strength-item">
+                    <strong>Kết nối & Lãnh đạo</strong>
+                    <p>Khả năng kết nối tốt, thúc đẩy tinh thần làm việc nhóm và giữ lửa hiệu suất chung.</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- RIGHT MAIN CONTENT: Professional Experience & Assets -->
+        <main class="main-content">
+            
+            <!-- Professional Objective -->
+            <section>
+                <div class="section-title">Mục tiêu nghề nghiệp</div>
+                <div class="objective-card">
+                    <p class="objective-text">
+                        Vận dụng tối đa nền tảng kiến thức Quản trị bài bản kết hợp cùng kinh nghiệm thực chiến trong lĩnh vực đàm phán thương mại và phát triển thị trường để tối ưu hóa doanh thu cho doanh nghiệp.
+                    </p>
+                    <p class="objective-text">
+                        Bản thân không ngừng trau dồi năng lực chuyên môn và tư duy nhạy bén nhằm mang lại giá trị bền vững cho tổ chức, đồng thời hướng tới chinh phục các cột mốc quản lý cấp cao <strong>(Sales Manager / Business Development Manager)</strong>.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Work Experience Timeline -->
+            <section>
+                <div class="section-title">Kinh nghiệm làm việc</div>
+                <div class="timeline-container">
+                    
+                    <!-- Job 1 -->
+                    <div class="timeline-node">
+                        <div class="job-card-header">
+                            <div>
+                                <h3 class="job-role">Nhân viên Kinh doanh mảng B2B</h3>
+                                <div class="company-badge-group">
+                                    <span class="company-name">Công ty ABCxyz</span>
+                                </div>
+                            </div>
+                            <span class="date-badge">05/2021 - Hiện tại</span>
+                        </div>
+                        <ul class="task-list">
+                            <li>Chủ động tìm kiếm, khai thác và mở rộng mạng lưới khách hàng doanh nghiệp đối tác và hệ thống đại lý tiềm năng nhằm tăng độ phủ thị trường.</li>
+                            <li>Khảo sát và phân tích sâu nhu cầu khách hàng; tư vấn các giải pháp sản phẩm/dịch vụ tối ưu và trực tiếp đàm phán, ký kết các hợp đồng thương mại.</li>
+                            <li>Xây dựng, chăm sóc và duy trì mối quan hệ bền vững với các khách hàng chiến lược, thúc đẩy tỷ lệ tái ký hợp đồng và gia tăng giá trị vòng đời khách hàng.</li>
+                            <li>Theo dõi chặt chẽ tiến độ thực hiện hợp đồng, phối hợp liên phòng ban để đảm bảo chất lượng dịch vụ và hỗ trợ quản lý, đốc thúc thu hồi công nợ.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="timeline-node">
+                        <div class="job-card-header">
+                            <div>
+                                <h3 class="job-role">Chuyên viên Quan hệ Khách hàng Cá nhân</h3>
+                                <div class="company-badge-group">
+                                    <span class="company-name">Ngân hàng TMCP Nam Á</span>
+                                </div>
+                            </div>
+                            <span class="date-badge">12/2020 - 03/2021</span>
+                        </div>
+                        <ul class="task-list">
+                            <li>Khai thác nguồn dữ liệu khách hàng cá nhân tiềm năng, thiết lập liên hệ trực tiếp để tư vấn các giải pháp tài chính và gói sản phẩm tín dụng phù hợp.</li>
+                            <li>Thực hiện nghiệp vụ thẩm định năng lực tài chính, điều kiện kinh tế và đánh giá chi tiết giá trị tài sản đảm bảo của khách hàng vay vốn.</li>
+                            <li>Hướng dẫn, hỗ trợ khách hàng hoàn thiện hồ sơ và thủ tục giải ngân nhanh chóng theo đúng quy trình và quy định quy chuẩn của ngân hàng.</li>
+                            <li>Theo dõi sát sao tiến độ hoàn trả định kỳ, phân tích và thực hiện các biện pháp quản trị rủi ro thu hồi nợ kịp thời.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="timeline-node">
+                        <div class="job-card-header">
+                            <div>
+                                <h3 class="job-role">Nhân viên Tư vấn Bán hàng (Nhãn hàng SAMSUNG)</h3>
+                                <div class="company-badge-group">
+                                    <span class="company-name">Công Ty TNHH Acacy</span>
+                                </div>
+                            </div>
+                            <span class="date-badge">08/2017 - 09/2018</span>
+                        </div>
+                        <ul class="task-list">
+                            <li>Nghiên cứu chuyên sâu về các dòng sản phẩm công nghệ và giải pháp của Samsung, hỗ trợ kỹ thuật tư vấn tối ưu nhằm thúc đẩy hiệu suất doanh số cho hệ thống đại lý.</li>
+                            <li>Xây dựng kế hoạch bán hàng chi tiết theo chỉ tiêu đề ra (Tháng/Quý/Năm); chủ động nghiên cứu thị trường và sức mua để tư vấn chiến lược đặt hàng hiệu quả cho đối tác.</li>
+                            <li>Tham gia key-role vào các chiến dịch xây dựng hình ảnh thương hiệu, triển khai các hoạt động Marketing Online (Facebook, Zalo) và Offline của công ty.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="timeline-node">
+                        <div class="job-card-header">
+                            <div>
+                                <h3 class="job-role">Nhân viên Bán hàng & Chăm sóc Khách hàng</h3>
+                                <div class="company-badge-group">
+                                    <span class="company-name">Công ty Cổ Phần Thế Giới Di Động</span>
+                                </div>
+                            </div>
+                            <span class="date-badge">08/2015 - 06/2016</span>
+                        </div>
+                        <ul class="task-list">
+                            <li>Tiếp đón, giới thiệu và tư vấn chuyên sâu tính năng sản phẩm, báo giá dịch vụ kèm chương trình khuyến mãi hiện hành để chốt giao dịch trực tiếp tại cửa hàng.</li>
+                            <li>Thực hiện công tác Telesales và chăm sóc khách hàng sau bán; tiếp nhận xử lý các vấn đề bảo hành, đổi trả nhằm tối ưu hóa trải nghiệm và lòng trung thành của khách hàng.</li>
+                            <li>Nghiêm túc hoàn thành các chỉ tiêu KPIs về doanh số cá nhân và các công việc điều phối từ Quản lý siêu thị.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section>
+                <div class="section-title">Học vấn</div>
+                <div class="edu-card">
+                    <div class="edu-info">
+                        <h4>Chuyên ngành: Quản trị Doanh nghiệp Vừa và Nhỏ</h4>
+                        <p class="company-name">Cao Đẳng Nghề HOA SEN</p>
+                        <p style="font-size: 13px; color: var(--gray-text); margin-top: 4px;">Thời gian học: 09/2018 - 08/2021</p>
+                    </div>
+                    <div class="edu-grade">
+                        <span class="grade-pill">Tốt nghiệp loại Giỏi (GPA: 8.6)</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Skills -->
+            <section>
+                <div class="section-title">Các kỹ năng</div>
+                <div class="skill-box-wrapper">
+                    
+                    <div>
+                        <div class="skill-subgroup-title">Kỹ năng chuyên môn & Mềm</div>
+                        <div class="tag-cloud">
+                            <span class="skill-tag">Phát triển thị trường</span>
+                            <span class="skill-tag">Kinh doanh B2B & B2C</span>
+                            <span class="skill-tag">Đàm phán & Thuyết phục</span>
+                            <span class="skill-tag">Thẩm định khách hàng</span>
+                            <span class="skill-tag">Giải quyết vấn đề</span>
+                            <span class="skill-tag">Làm việc nhóm & Độc lập</span>
+                            <span class="skill-tag">Tư vấn giải pháp tài chính</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="skill-subgroup-title">Tin học văn phòng</div>
+                        <div class="tag-cloud">
+                            <span class="skill-tag">Microsoft Word</span>
+                            <span class="skill-tag">Microsoft Excel</span>
+                            <span class="skill-tag">Powerpoint</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
